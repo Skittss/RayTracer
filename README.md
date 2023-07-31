@@ -121,5 +121,5 @@ g++ -I..\lib\include -g main.cpp ..\lib\src\data\*.cpp ..\lib\src\geometry\*.cpp
 ## Improvements
 
 - [ ] CMake build file.
-- [ ] Multithreading for rendering and and photon tracing.
+- [X] Multithreading for gathering rays and and photon tracing. (to upload)
 - [ ] Periodic autosave for large renders.
