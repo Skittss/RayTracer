@@ -6,9 +6,13 @@
 - Indirect Illumination and Caustics via photon map.
 
 ---
+## More Info
+Please refer to [this blog post](https://skittss.github.io/PortfolioWebsite/#/projects/RayTracer) where I describe the features of this raytracer in more detail, and outline how each one was achieved.
+
+---
 ## Compiling and Running
 
-The source can be compiled using the provided vscode batch properties under `./vscode`.
+The source can be compiled using the provided vscode batch properties under `/.vscode`.
 \
 \
 Alternatively, via `g++` with the following command run in working directory `./src/`:
@@ -114,7 +118,7 @@ g++ -I..\lib\include -g main.cpp ..\lib\src\data\*.cpp ..\lib\src\geometry\*.cpp
 </details>
 
 ---
-## Todo
+## Improvements
 
 - [ ] CMake build file.
 - [ ] Multithreading for rendering and and photon tracing.
