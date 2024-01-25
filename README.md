@@ -20,7 +20,7 @@ The source is compiled using CMake and g++.
 If using windows, specify a path before building for MinGW in `.env.cmake` using the template `env_template.cmake`.
 \
 \
-After the project is built, ensure you run the executable <b><u>from the build directory</u></b> or else
+After the project is built, ensure you run the executable **FROM THE BUILD DIRECTORY** or else
 relative paths will break.
 \
 \
