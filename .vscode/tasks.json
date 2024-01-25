@@ -16,7 +16,7 @@
                 "${workspaceFolder}\\lib\\src\\util\\*.cpp",
                 "${workspaceFolder}\\src\\scenes\\*.cpp",
                 "-o",
-                "${workspaceFolder}\\bin\\main.exe",
+                "${workspaceFolder}\\build\\raytracer.exe",
                 "-lm"
             ],
             "options": {

@@ -9,7 +9,7 @@
             "includePath": ["${workspaceFolder}/lib/**", "${workspaceFolder}/lib/include"],
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\bin\\main.exe",
+            "program": "${workspaceFolder}\\build\\raytracer.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}\\src",

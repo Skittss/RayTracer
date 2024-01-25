@@ -2,8 +2,6 @@
 
 #include "../data/colour.h"
 
-// TODO: possibly separate library / main application config.
-
 namespace CONFIG {
 
 // Camera config
@@ -40,9 +38,9 @@ constexpr int PENUMBRA_SAMPLES = 200;
     constexpr float SATURATION = 1.0f;
     constexpr float GAMMA = 1.0f;
 
-
+// Note: Paths are one level up as cmake builds to ./build not ./
 // Import paths
-constexpr char *TEAPOT_PATH = (char *)"models/teapot_smaller.ply";
+constexpr char *TEAPOT_PATH = (char *)"../src/models/teapot_smaller.ply";
 
 // Exoport paths
 constexpr char *RENDER_OUTPUT_PATH = (char *)"../exports/ppm/render.ppm";

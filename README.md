@@ -11,14 +11,23 @@ Please refer to [this blog post](https://skittss.github.io/PortfolioWebsite/#/pr
 
 ---
 ## Compiling and Running
-
-The source can be compiled using the provided vscode batch properties under `/.vscode`.
+The source is compiled using CMake and g++.
 \
 \
-Alternatively, via `g++` with the following command run in working directory `./src/`:
-```sh
-g++ -I..\lib\include -g main.cpp ..\lib\src\data\*.cpp ..\lib\src\geometry\*.cpp ..\lib\src\materials\*.cpp ..\lib\src\rendering\*.cpp ..\lib\src\util\*.cpp ..\src\scenes\*.cpp -o ..\bin\main.exe
-```
+`build_win.bat` and `build_unix.sh` are provided which will build the project for windows and unix (linux/MacOS) respectively. (note: unix building is untested)
+\
+\
+If using windows, specify a path before building for MinGW in `.env.cmake` using the template `env_template.cmake`.
+\
+\
+After the project is built, ensure you run the executable <b><u>from the build directory</u></b> or else
+relative paths will break.
+\
+\
+Note, the executable will *not* output a file if the output directories do not exist (the above build files do handle making these directories, however).
+\
+\
+Vscode build tasks are also included for running & debugging, but will need to have their compiler paths updated if you plan to use them.
 
 ---
 ## Project Structure
@@ -120,6 +129,4 @@ g++ -I..\lib\include -g main.cpp ..\lib\src\data\*.cpp ..\lib\src\geometry\*.cpp
 ---
 ## Improvements
 
-- [ ] CMake build file.
-- [X] Multithreading for gathering rays and and photon tracing. (to upload)
 - [ ] Periodic autosave for large renders.
